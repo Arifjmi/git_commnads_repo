@@ -1,0 +1,126 @@
+mkdir git
+
+>> git init
+
+>> git config user.name "Arif.dev.ops" or git config --global user.name "Arif.dev.ops"
+
+>> git config user.email "arif.jmi.ece@gmail.com"  or git config --global user.email
+
+>> git remote add origin <paste url of repo>
+
+>> git config --list
+
+>> git push origin master
+
+>> git add .(git add file name)
+>> git commit -m "message"
+
+>> git push origin master
+>> git status
+>> git log
+
+## Check commit what i have written
+
+>> git show de3h65 (commit-id)
+
+### To see the latest commit
+
+>> git log -1
+>> git log -2
+### To see all commit
+>> git log --oneline
+>> git log --name-only
+
+
+### To see the commit those i forget
+
+>> git log --grep "commit"
+
+>>>>>>>>>>>GIT BRANCH>>>>>>>>>>>>>
+
+## To see the list of available branch
+
+>> git branch
+
+## To create new branch
+
+>> git branch <branch name>
+
+## To switch the branch
+
+>> git checkout <name of branch you want to go>
+
+## To create and checkout the branch
+
+## To create and checkout the branch
+
+>> git checkout -b <branch name>
+
+## To delete the branch
+
+>> git branch -d <branch name>
+
+## To forcefully delete the branch
+
+>> git branch -D <branch name>
+
+## To Merge the branch
+
+>> git merge <branch name>
+
+>>>>>>>>>>>>>>>>>>>>>>>>STASH>>>>>>>>>>>>>>>>>>>>
+
+## To stash an item
+
+>> git stash
+
+## To see the stash list
+
+>> git stash list
+
+## To apply stashed item
+ 
+## To apply stashed item
+
+>> git stash apply stash@{1 or ..} <copy it from git stash list >
+
+## To stash list
+
+>> git stash clear
+
+>>>>>>>>>>>>>>>>>>>>>>>GIT RESET >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+## To reset staging area
+
+>> git reset . or git reset <file name>
+
+## To reset from both staging area and workspace
+
+>> git reset --hard
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>GIT REVERT>>>>>>>>>>>>>>>>>
+
+## To revert the commit
+
+>> git revert commit-ID
+
+## To clean untrack file
+
+>> git clean -n or git clean -f
+
+>>>>>>>>>>>>>>>>>>>>>>GIT TAG>>>>>>>>>>>>>>>>>>>>>
+## To apply tag
+
+>> git tag -a <tag name> -m <message> <commit ID>
+
+## To see the particular commit by using tag
+
+>> git show <tag name>
+
+## To delete the tag
+
+>> git tag -d <Tag name>
+
+## To clone
+
+>> git clone <url of repo>
+
