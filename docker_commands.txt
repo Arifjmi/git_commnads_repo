@@ -1,0 +1,129 @@
+## To check the docker version.
+
+  >> docker --version.
+
+## To see all images.
+  
+  >> docker images
+
+## To find out the images in docker hub.
+  
+  >> docker search jenkins(Image)
+
+## To download image from dockerhub
+
+  >> docker pull jenkins(image)
+
+## To give name conatiner.
+
+  >> docker run -it --name container_name image /bin/bash
+
+## To check the service is start or not.
+
+  >> service docker status or docker info
+
+## To start docker.
+
+  >> service start docker
+
+## To go inside the container.
+
+  >> docker attach container_name
+
+## To see all containers.
+
+  >> docker ps -a
+
+## To see only runnimg container.
+
+  >> docker ps
+
+## To stop conatiner.
+
+  >> docker stop container_name
+
+## To delete container.
+
+  >> docker rm container
+
+## To check the operating system version.
+
+  >> cat /etc/os-release or cat /etc/*release*
+
+## To see the difference between actual and changes
+
+  >> docker diff container name
+
+## To stop the all containers.
+ 
+  >> docker stop $(docker ps -aq)
+
+## To remove or delete all stop containers.
+
+  >> docker rm $(docker ps -aq)
+
+## To delete particular image.
+
+  >> docker rmi image_name
+
+## To delete all images.
+
+  >> docker rmi $(docker images -aq)
+
+## To create image from container.
+
+  >> docker commit container(created) image(new image)
+
+## To create image from dockerfile.
+
+  >> docker build -t image_name .
+
+## To share volume with another container.( container to container)
+  
+  >> docker run -it --name container(new) --privileged=true --volume container(old) Image /bin/bash
+
+## To create volume by command
+
+  >> docker run -it --name container_name -v /volume ubuntu(image) /bin/bash
+
+## To share volume host to container.
+
+  >> docker run --name hostcontainer(container name) -v /home/ec2-user:container_name --privilege=true image_name /bin/bash
+
+## Some othe commands
+ 
+  >> docker volume
+  >> docker volume create <volume name>
+
+  >> docker volume rm <volume_name>
+  
+## To removed all unuse volume 
+
+  >> docker volume prune
+
+## To check volume information
+
+  >> docker volume inspect <volume name>
+
+## To check container information
+
+  >> docker container inspect <container name>
+
+## To mape port 
+
+  >> docker run -td --name <container_name> -p 80:80 image 
+
+## To give tage to your image
+
+  >> docker tag image1(created) dockerID/newimage(tag name)
+
+## To pull image from docker hub
+
+  >> docker pull dockerID/newimage
+
+## To push image
+
+  >> docker push Arifreza/project(image)
+
+    
+  
